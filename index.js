@@ -51,11 +51,11 @@ console.log(10*10);
 */
 
 function CemberinCevresi(yaricap) {
-  return 2*pi*yaricap;
+  return 2*pi.yaricap;
 }
 
 /* (Oto test yok) Yukarıdaki CemberinCevresi fonksiyonunu yarıçap = 5 vererek aşağıda çalıştırıp, sonucu konsolda gözlemleyin (console.log)  */
-console.log(2*pi*5);
+console.log(2*3.14159*5);
 /* 	GÖREV 2:  
 - CemberinAlani fonksiyonunu kullanarak aşağıdaki yönergeleri uygulayın:
 	1. Argüman olarak çemberin yarıçapını BİRİNCİ parametre olacak alacaktır. 
@@ -69,7 +69,7 @@ function CemberinAlani(yaricap,pi) {
 }
 
 /* (Oto test yok) Yukarıdaki CemberinAlani fonksiyonunu yarıçap = 15 vererek aşağıda çalıştırıp, sonucu konsolda gözlemleyin (console.log)  */
-console.log(pi*15*15);
+console.log(3.14159*15*15);
 /* 	GÖREV 3:
 	- Sayfanın en üstünde global değişken olarak tanımlanmış bir sayilar dizisi bulunmaktadır. Bu dizi içinde 0 ile 1000 arasında rasgele oluşturulmuş tam sayılar ve ondalıklı sayılar bulunmaktadır. Bu diziyi kullanarak aşağıdakileri uygulayın:
 		3a. enbuyuk ve enkucuk isminde 2 adet değişken tanımlayın ve sayilar dizisindeki en küçük sayı ile en büyük sayıyı bu değişkenlere atayın. (for döngüsü kullanın)
@@ -98,8 +98,17 @@ let ucetambolunenler,
   tekraredensayilar;
 
 // 3a çözümü
-
-/* kodlar buraya */
+let min=sayilar[0];
+let max=sayilar[0];
+for(let i=0;i<sayilar.length;i++){
+  if(min>sayilar[i]){
+    min=sayilar[i];
+  }
+  if(max<sayilar[i]){
+    max=sayilar[i];
+  }
+}
+//
 
 // 3b çözümü:
 
