@@ -88,8 +88,8 @@ console.log(3.14159*15*15);
 */
 
 /*  (oto test yok) sayilar dizisi içinde kaç adet sayı olduğunu konsola yazdırın */
-
-let ucetambolunenler,
+console.log(sayilar.length);
+ ucetambolunenler,
   enkucuk,
   enbuyuk,
   ucebolunenlerintoplami,
@@ -112,11 +112,12 @@ for(let i=0;i<sayilar.length;i++){
 
 // 3b çözümü:
 
-/* kodlar buraya */
+
 
 // 3c çözümü:
 
-/* kodlar buraya */
+ucetambolunenler.reduce((toplam,yeni) => toplam+yeni,0);
+const ucebolunenlerintoplami=(toplam,yeni) =>toplam+yeni;
 
 // 3d çözümü
 
